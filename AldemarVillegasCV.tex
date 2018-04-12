@@ -1,106 +1,7 @@
-\documentclass[a4paper]{article}
-    \usepackage{fullpage}
-    \usepackage{amsmath}
-    \usepackage{amssymb}
-    \usepackage{textcomp}
-    \usepackage[utf8]{inputenc}
-    \usepackage[T1]{fontenc}
-    \textheight=10in
-    \pagestyle{empty}
-    \raggedright
-
-    %\renewcommand{\encodingdefault}{cg}
-%\renewcommand{\rmdefault}{lgrcmr}
-
-\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
-
-% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
-
-\newcommand{\area} [2] {
-    \vspace*{-9pt}
-    \begin{verse}
-        \textbf{#1}   #2
-    \end{verse}
-}
-
-\newcommand{\lineunder} {
-    \vspace*{-8pt} \\
-    \hspace*{-18pt} \hrulefill \\
-}
-
-\newcommand{\header} [1] {
-    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
-    \vspace*{-6pt} \lineunder
-}
-
-\newcommand{\employer} [3] {
-    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
-}
-
-\newcommand{\contact} [3] {
-    \vspace*{-10pt}
-    \begin{center}
-        {\Huge \scshape {#1}}\\
-        #2 \\ #3
-    \end{center}
-    \vspace*{-8pt}
-}
-
-\newenvironment{achievements}{
-    \begin{list}
-        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
-    \end{list}
-}
-
-\newcommand{\schoolwithcourses} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-    \vspace*{5pt}
-}
-
-\newcommand{\school} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-}
-% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
-
-    \begin{document}
-\vspace*{-40pt}
-
-    
-
-%==== Profile ====%
-\vspace*{-10pt}
-\begin{center}
-	{\Huge \scshape {Aldemar Villegas}}\\
-	Cali, Valle del Cauca, Colombia $\cdot$ alvilleg@gmail.com $\cdot$ (57) 3127584992 $\cdot$ upwork.com\\
-\end{center}
-
-%==== Education ====%
-\header{Education}
-\textbf{Universidad del Valle}\hfill Cali, Valle del Cauca\\
-BS Ingeniero de Sistemas \textit{GPA: 4.2} \hfill Aug 2001 - Oct 2006\\
-\vspace{2mm}
+% !TEX TS-program = XeLaTeX
 
 
-
-
-
-\header{Projects}
-{\textbf{Perseus}} {\sl Java, Javascript, Spring Framework, AngularJS} \\
-Vehicle Routing Solver\\
-\vspace*{2mm}
-{\textbf{Geodec}} {\sl Java, Postgresql, MongoDB, Openlayers, MariaDB Columnar Store} \\
-Address geocoder, map viewer, OLAP Viewer\\
-\vspace*{2mm}
-
-\header{Awards}
-\textbf{Andres Bello} \hfill ICFES\\
-Recognized for hight score in standard tests, scholarship to study in the University \hfill Nov 1999\\
-\vspace*{2mm}
-
-\ 
-\end{document}%% The MIT License (MIT)
+%% The MIT License (MIT)
 %%
 %% Copyright (c) 2015 Daniil Belyakov
 %%
@@ -123,15 +24,16 @@ Recognized for hight score in standard tests, scholarship to study in the Univer
 %% SOFTWARE.
 
 % The font could be set to Windows-specific Calibri by using the 'calibri' option
+
 \documentclass[]{mcdowellcv}
 
 % For mathematical symbols
 \usepackage{amsmath}
 
 % Set applicant's personal data for header
-\name{Gayle L. McDowell}
-\address{123 Spruce St, Apt 35 \linebreak Philadelphia PA 19103}
-\contacts{(555) 555-1212 \linebreak gayle@careercup.com}
+\name{Aldemar Villegas}
+\address{Cra 66 13b 29  \linebreak Cali, Valle del Cauca}
+\contacts{(57) 3127584992 \linebreak alvilleg@gmail.com}
 
 \begin{document}
 
@@ -140,7 +42,7 @@ Recognized for hight score in standard tests, scholarship to study in the Univer
 	
 	% Print the content
 	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Software Engineer, Intern}{Apple Computer}{Summer 2004}
+		\begin{cvsubsection}{Software Engineer}{Grupo Bit}{April 2015}
 			iChat AV			
 			\begin{itemize}
 				\item Reduced time to render the user’s buddy list by 75\% by implementing prediction algorithm.
@@ -149,21 +51,37 @@ Recognized for hight score in standard tests, scholarship to study in the Univer
 			\end{itemize}
 		\end{cvsubsection}
 		
-		\begin{cvsubsection}{Lead Student Ambassador}{Microsoft Corporation}{Fall 2003 -- Spring 2005}	
+		\begin{cvsubsection}{Software Engineer}{Presto Sports}{June 2010}
+			iChat AV			
+			\begin{itemize}
+				\item Reduced time to render the user’s buddy list by 75\% by implementing prediction algorithm.
+				\item Implemented iChat integration with OS X Spotlight Search by creating tool which extracts metadata from saved chat transcripts and provides metadata to a system-wide search database.
+				\item Redesigned chat file format and implemented backwards compatibility for search.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Support Engineer}{Emcali}{December 2009}	
 			\begin{itemize}
 				\item Promoted to Lead Student Ambassador in Fall 2004; supervised 10 -- 15 Student Ambassadors.
 				\item Created and taught Computer Science course, CSE 099: Software Design and Development.
 			\end{itemize}
 		\end{cvsubsection}
 		
-		\begin{cvsubsection}{Head Teaching Assistant}{University of Pennsylvania}{Fall 2001 -- Spring 2005}		
+		\begin{cvsubsection}{Teacher}{Universidad del Valle}{January 2009 -- December 2009}		
 			\begin{itemize}
 				\item Courses: Advanced Java III, Software Engineering, Mathematical Foundations of Computer Science I \& II.
 				\item Promoted to Head TA in Fall 2004; led weekly meetings and supervised four other TAs.
 			\end{itemize}
 		\end{cvsubsection}
 		
-		\begin{cvsubsection}{Software Design Engineer, Intern}{Microsoft Corporation}{Summers 2001 -- 2003}
+		\begin{cvsubsection}{Lead Developer}{Startup project}{April 2007 -- December 2009}		
+			\begin{itemize}
+				\item Courses: Advanced Java III, Software Engineering, Mathematical Foundations of Computer Science I \& II.
+				\item Promoted to Head TA in Fall 2004; led weekly meetings and supervised four other TAs.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Software Engineer}{Open International Systems}{March 2005 -- April 2007}
 			Visual Studio Core (Summer 2003)		
 			\begin{itemize}
 				\item Implemented a user interface for the VS open file switcher (ctrl-tab) and extended it to tool windows.
@@ -178,12 +96,9 @@ Recognized for hight score in standard tests, scholarship to study in the Univer
 	\end{cvsection}
 	
 	\begin{cvsection}{Education}
-		\begin{cvsubsection}{Philadelphia, PA}{University of Pennsylvania}{Fall 2000 -- May 2005}
+		\begin{cvsubsection}{Cali, Valle del cauca, Colombia}{Universidad del valle}{August 2001 -- October 2006}
 			\begin{itemize}
-				\item M.S.E. in Computer and Information Science, May 2005. GPA: 3.6
-				\item B.S.E. in Computer Science Engineering with Minor in Mathematics, May 2005.  In-major GPA: 3.4.
-				\item Graduate Coursework: Software Foundations; Computer Architecture; Algorithms; Artificial Intelligence; Comparison of Learning Algorithms; Computational Theory.
-				\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Engineering Entrepreneurship; Calculus III.
+				\item B.S.E. in Computer Science Engineering with Minor in Mathematics, May 2005.  In-major GPA: 3.4.				
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -191,9 +106,9 @@ Recognized for hight score in standard tests, scholarship to study in the Univer
 	\begin{cvsection}{Technical Experience}
 		\begin{cvsubsection}{Projects}{}{}
 			\begin{itemize}
-				\item \textbf{Multi-User Drawing Tool} (2004). Electronic classroom where multiple users can view and simultaneously draw on a “chalkboard” with each person’s edits synchronized.  C++, MFC
-				\item \textbf{Synchronized Calendar} (2003 – 2004). Desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users.  C\#.NET, SQL, XML
-				\item \textbf{Operating System} (2002).  UNIX-style OS with scheduler, file system, text editor and calculator. C
+				\item \textbf{Vehicle Routing Software} (2007-2009). Electronic classroom where multiple users can view and simultaneously draw on a “chalkboard” with each person’s edits synchronized.  C++, MFC
+				\item \textbf{Geocoder} (2015-��2017). Desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users.  C\#.NET, SQL, XML
+				\item \textbf{Olap Viewer} (2002).  UNIX-style OS with scheduler, file system, text editor and calculator. C
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -201,8 +116,9 @@ Recognized for hight score in standard tests, scholarship to study in the Univer
 	\begin{cvsection}{Additional Experience and Awards}
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item \textbf{Instructor (2003 – 2005):} Taught two full-credit Computer Science courses; average ratings of 4.8 out of 5.0.
-				\item \textbf{Third Prize, Senior Design Projects:} Awarded 3rd prize for Synchronized Calendar project, out of 100 projects.
+				\item \textbf{Competitive programming coach} Taught two full-credit Computer Science courses; average ratings of 4.8 out of 5.0.
+				\item \textbf{} Awarded 3rd prize for Synchronized Calendar project, out of 100 projects.
+				\item \textbf{Andr\'es Bello} Taught two full-credit Computer Science courses; average ratings of 4.8 out of 5.0.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -210,8 +126,8 @@ Recognized for hight score in standard tests, scholarship to study in the Univer
 	\begin{cvsection}{Languages and Technologies}
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item C++; C; Java; Objective-C; C\#.NET; SQL; JavaScript; XSLT; XML (XSD) Schema 
-				\item Visual Studio; Microsoft SQL Server; Eclipse; XCode; Interface Builder
+				\item Java; C++; SQL; JavaScript; PL/SQL 
+				\item Eclipse; XCode; Git; ETL; Data mining, Business Intelligence, Datawarehouse, OLAP
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
